@@ -8,8 +8,8 @@ import {
 import { auth } from "@/lib/firebase";
 import { saveUserToFirestore, getUserRoleFromFirestore } from "@/lib/firestoreStore";
 import { setCurrentUser, getUsers, saveUsers } from "@/lib/store";
-import { Eye, EyeOff, User, Mail, Phone, Lock, Loader2, AlertCircle } from "lucide-react";
-import carLiftLogo from "@/assets/carlift-logo-new.png";
+import { Eye, EyeOff, User, Mail, Phone, Lock, Loader as Loader2, CircleAlert as AlertCircle } from "lucide-react";
+import carLiftLogo from "@/assets/carlift-logo-new.svg";
 
 const InputField = ({
   type, placeholder, value, onChange, icon, rightEl, disabled

@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "@/hooks/use-toast";
-import {
-  Crown, MapPin, CalendarCheck, Trash2, MessageCircle, FileText, Plus, ArrowLeft, X, Car, CheckCircle, Clock,
-  Bell, AlertTriangle, Shield, ChevronDown, ChevronUp, Users, TrendingUp, Timer, Settings,
-  ImageIcon, DollarSign, BarChart3, Loader2, Wifi, LogIn, Eye, EyeOff, Building2, Phone, Mail,
-  ChevronRight, CalendarClock, Share2, Hash, Pencil, UserRound, Menu
-} from "lucide-react";
+import { Crown, MapPin, CalendarCheck, Trash2, MessageCircle, FileText, Plus, ArrowLeft, X, Car, CircleCheck as CheckCircle, Clock, Bell, TriangleAlert as AlertTriangle, Shield, ChevronDown, ChevronUp, Users, TrendingUp, Timer, Settings, Image as ImageIcon, DollarSign, ChartBar as BarChart3, Loader as Loader2, Wifi, LogIn, Eye, EyeOff, Building2, Phone, Mail, ChevronRight, CalendarClock, Share2, Hash, Pencil, UserRound, Menu } from "lucide-react";
 import { jsPDF } from "jspdf";
 import {
   signInWithEmailAndPassword, createUserWithEmailAndPassword,
@@ -15,7 +10,7 @@ import {
   updatePassword, verifyBeforeUpdateEmail
 } from "firebase/auth";
 import { auth, ADMIN_EMAILS } from "@/lib/firebase";
-import carLiftLogo from "@/assets/carlift-logo-new.png";
+import carLiftLogo from "@/assets/carlift-logo-new.svg";
 import {
   getBookings, saveBookings, getPickupLocations, getDropoffMapping,
   savePickupLocations, saveDropoffMapping, CARS_LIST, ROUTES_DATA, type Booking, type RouteData, type PaymentInfo,

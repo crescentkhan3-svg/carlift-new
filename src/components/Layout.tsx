@@ -3,7 +3,7 @@ import { Phone, LogIn, LogOut, User, Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signOut, type User as FirebaseUser } from "firebase/auth";
 import { auth } from "@/lib/firebase";
-import carLiftLogo from "@/assets/carlift-logo-new.png";
+import carLiftLogo from "@/assets/carlift-logo-new.svg";
 
 const SlidingBanner = () => {
   const location = useLocation();
